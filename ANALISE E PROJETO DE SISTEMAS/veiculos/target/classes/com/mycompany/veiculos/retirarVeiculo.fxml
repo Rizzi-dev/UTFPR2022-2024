@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.mycompany.veiculos.RetirarVeiculoController">
+   <children>
+      <ComboBox fx:id="veic" layoutX="81.0" layoutY="123.0" prefHeight="25.0" prefWidth="438.0" />
+      <ComboBox fx:id="moto" layoutX="81.0" layoutY="182.0" prefHeight="25.0" prefWidth="438.0" />
+      <DatePicker fx:id="datepicker" layoutX="81.0" layoutY="252.0" prefHeight="25.0" prefWidth="438.0" />
+      <Text layoutX="185.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RETIRAR VEICULO">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="81.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione o veículo" />
+      <Text layoutX="81.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione o motorista" />
+      <Text layoutX="82.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione a data" />
+      <Button layoutX="82.0" layoutY="314.0" mnemonicParsing="false" onAction="#retiradaVeiculo" prefHeight="25.0" prefWidth="438.0" text="RETIRAR" />
+      <Button layoutX="82.0" layoutY="354.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="25.0" prefWidth="438.0" text="VOLTAR" />
+   </children>
+</AnchorPane>
