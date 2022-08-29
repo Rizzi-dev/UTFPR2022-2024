@@ -1,4 +1,0 @@
---patch-module
-com.mycompany.veiculos=_
---add-reads
-com.mycompany.veiculos=ALL-UNNAMED
