@@ -9,10 +9,21 @@ si.cpu()
     console.log('- cores: ' + data.cores);
     console.log('- physical cores: ' + data.physicalCores);
     console.log('- voltagem: ' +data.voltage);
+    console.log('- cache l1: ' + data.cache.l1d);
+    console.log('- cache l2: ' + data.cache.l2);
+    console.log('- cache l3: ' + data.cache.l3);
     console.log('...');
   })
   .catch(error => console.error(error));
 
+si.cpuTemperature()
+  .then(data => {
+    console.log('main: ' + data.main);
+    console.log('cores: ' + data.cores);
+    console.log('max: ' + data.max);
+    console.log('chipset: ' + data.chipset);
+})
+.catch(error => console.error(error));
 
 si.mem()
   .then (data => {
